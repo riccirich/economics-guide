@@ -1,0 +1,9 @@
+:root {
+    --pink: #F3668A;
+    --light: #f2f2f2;
+    --dark: #1f1f1f;
+}
+
+header {
+    background-color: var(--pink);
+}
