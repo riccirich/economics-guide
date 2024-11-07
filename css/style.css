@@ -4,6 +4,22 @@
     --dark: #1f1f1f;
 }
 
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
 body {
+    font-family: "Rubik", serif;
+}
+
+header {
     background-color: var(--pink);
+    padding: 20px 50px;
+    display: flex;
+}
+
+footer {
+    text-align: center;
 }
