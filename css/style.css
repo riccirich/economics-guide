@@ -4,6 +4,6 @@
     --dark: #1f1f1f;
 }
 
-header {
+body {
     background-color: var(--pink);
 }
