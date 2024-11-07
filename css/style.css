@@ -20,6 +20,15 @@ header {
     display: flex;
 }
 
+.hero {
+    background-image: url("../images/hero_bg.webp");
+    mix-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    height: 100vh;
+}
+
 footer {
     text-align: center;
 }
