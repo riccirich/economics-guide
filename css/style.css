@@ -18,21 +18,17 @@ header {
     background-color: var(--pink);
     padding: 20px 50px;
     display: flex;
+    justify-content: space-between;
 }
 
 .hero {
-    background-image: url("../images/hero_bg.webp");
-    mix-blend-mode: soft-light;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 100px 50px;
-    height: 100vh;
+    background-color: var(--pink);
+    height: 100%;
 }
 
-.content-wrapper {
+.container {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -43,15 +39,8 @@ header {
     align-items: center;
 }
 
-.column {
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .content-box {
-    padding: 1rem;
-    margin-bottom: 1rem;
+    width: 100%;
 }
 
 footer {
