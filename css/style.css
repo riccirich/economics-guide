@@ -21,9 +21,8 @@ h5 {
 
 html {
     font-size: 100%;
+    /* 16px */
 }
-
-/* 16px */
 
 h1 {
     font-size: 3.053rem;
@@ -55,6 +54,7 @@ small {
     /* 12.8px */
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -74,6 +74,9 @@ html {
 
 header {
     background-color: var(--dark);
+    z-index: 3;
+    position: fixed;
+    width: 100%;
     padding: 20px 7%;
     display: flex;
     justify-content: space-between;
@@ -103,14 +106,24 @@ nav a {
     background-image: url(../images/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: auto;
 }
 
-.definition {
+.definition,
+.scarcity {
     background-color: var(--dark);
     padding: clamp(1rem, 5vw, 9.02%) clamp(1rem, 5vw, 15%);
     color: var(--light);
     height: auto;
+}
+
+.scarcity {
+    background-image: url(../images/paper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 .container {
@@ -124,11 +137,38 @@ nav a {
     margin: 0 auto;
 }
 
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
 .content-box {
-    padding: 1rem;
+    padding: 1.6rem;
     margin-bottom: 1rem;
     border: 1px solid var(--light);
     border-radius: 4px;
+}
+
+.intro {
+    padding-bottom: 2rem;
+}
+
+.def {
+    padding-top: 2rem;
+}
+
+.scarcity-title, .list{
+    border: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+.scarcity-img {
+    max-width: 100%;
+    align-items: center;
 }
 
 .hero-text {
@@ -154,6 +194,15 @@ nav a {
 .hero img {
     max-width: 100%;
     height: auto;
+}
+
+.list-item {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Mynerve', sans-serif;
+    font-size: large;
 }
 
 footer {
