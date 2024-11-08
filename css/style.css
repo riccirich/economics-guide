@@ -111,7 +111,8 @@ nav a {
 }
 
 .definition,
-.scarcity, .terms {
+.scarcity,
+.terms {
     background-color: var(--dark);
     padding: 8%;
     color: var(--light);
@@ -123,7 +124,9 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: var(--light);
     width: 100%;
+    height: 100vh;
 }
 
 .terms {
@@ -152,8 +155,14 @@ nav a {
 .content-box {
     padding: 1.6rem;
     margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
     border: 1px solid var(--light);
     border-radius: 4px;
+}
+
+.description{
+    background-color: var(--dark);
 }
 
 .intro {
