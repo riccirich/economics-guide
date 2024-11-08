@@ -114,12 +114,22 @@ nav a {
 .scarcity,
 .utility,
 .tradeoff,
-.terms {
+.terms,
+.citations {
     background-color: var(--dark);
     background-attachment: fixed;
     padding: 8%;
     color: var(--light);
     height: auto;
+}
+
+.citations p {
+    font-family: 'Rubik';
+    font-size: large;
+}
+
+.ref {
+    height: 100vh;
 }
 
 /*
