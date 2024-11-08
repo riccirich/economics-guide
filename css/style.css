@@ -4,6 +4,21 @@
     --dark: #1f1f1f;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.display {
+    font-family: 'Mynerve', sans-serif;
+}
+
+.title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 48.8px;
+}
+
 body,
 html {
     min-height: 100vh;
@@ -15,32 +30,44 @@ body {
 }
 
 header {
-    background-color: var(--pink);
-    padding: 20px 50px;
+    background-color: var(--dark);
+    padding: 20px 7%;
     display: flex;
-    justify-content: space-between;
 }
 
 .hero {
     background-color: var(--pink);
-    height: 100%;
+    background-image: url(../images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+
 }
 
 .container {
     position: relative;
     z-index: 2;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text {
+    padding: 9% 15%;
+}
+
+.quote,
+.left,
+.economists {
+    padding-top: 5%;
+    width: 100%;
 }
 
 .two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    height: 100vh;
     align-items: center;
-}
-
-.content-box {
-    width: 100%;
 }
 
 footer {
