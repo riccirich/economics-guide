@@ -66,7 +66,7 @@ function showTask() {
         document.getElementById('taskText').textContent = task.text;
         document.getElementById('choice1').textContent = task.choices[0].text;
         document.getElementById('choice2').textContent = task.choices[1].text;
-        document.getElementById('taskArea').style.display = 'none';
+        document.getElementById('start').style.display = 'none';
         document.getElementById('choices').style.display = 'block';
     } else {
         endGame();
@@ -90,6 +90,7 @@ function makeChoice(choiceIndex) {
 }
 
 function endGame(reason = "finished") {
+    document.getElementById('taskArea').style.display = 'none';
     document.getElementById('choices').style.display = 'none';
     document.getElementById('endScreen').style.display = 'block';
 

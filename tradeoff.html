@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <script src="./js/tradeoff.js"></script>
     <header>
         <div><a href="/index.html"><img src="images/logo.png" alt="Logo"></a></div>
         <nav>
@@ -38,11 +39,28 @@
                     But not everything has such a profound impact on our lives. Some decisions are small and not so
                     significant. Stopping by Tim Hortons every other morning for a double-double is a marginal choice.
                     Others are life changing. It's important to weigh the pros and cons of each decision. What are you
-                    willing to give up? What are you willing to sacrifice for your own personal gain?
+                    willing to give up? What are you willing to sacrifice for your own personal gain? This is the weight of tradeoff, opportunity costs.
                 </p>
             </div>
-            <div class="content-box">
-
+            <div class="content-box example">
+                <div class="stats" id="resources">
+                    <p>Energy: <span id="energy">50</span></p>
+                    <p>Time: <span id="time">50</span></p>
+                    <p>Money: <span id="money">50</span></p>
+                </div>
+                <div id="taskArea">
+                    <p id="taskText">Press "Start Game" to begin!</p>
+                    <button id="start"onclick="startGame()">Start Game</button>
+                </div>
+                <div id="choices" style="display: none;">
+                    <button id="choice1" onclick="makeChoice(1)"></button>
+                    <button id="choice2" onclick="makeChoice(2)"></button>
+                </div>
+                <div id="endScreen" style="display: none;">
+                    <h2>Game Over!</h2>
+                    <p id="summary"></p>
+                    <button onclick="restartGame()">Play Again</button>
+                </div>
             </div>
         </div>
     </section>
