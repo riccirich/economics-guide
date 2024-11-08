@@ -37,10 +37,28 @@ function startGame() {
 }
 
 function updateResources() {
-    document.getElementById('energy').textContent = resources.energy;
-    document.getElementById('time').textContent = resources.time;
-    document.getElementById('money').textContent = resources.money;
+    const energyElem = document.getElementById('energy');
+    const timeElem = document.getElementById('time');
+    const moneyElem = document.getElementById('money');
+
+    // Add flash effect by toggling the class
+    energyElem.classList.add('flash');
+    timeElem.classList.add('flash');
+    moneyElem.classList.add('flash');
+
+    // Update resource values
+    energyElem.textContent = resources.energy;
+    timeElem.textContent = resources.time;
+    moneyElem.textContent = resources.money;
+
+    // Remove flash class after animation ends
+    setTimeout(() => {
+        energyElem.classList.remove('flash');
+        timeElem.classList.remove('flash');
+        moneyElem.classList.remove('flash');
+    }, 500); // Match duration to animation length (0.5s)
 }
+
 
 function showTask() {
     if (currentTask < tasks.length) {

@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html>  
+<html>
+
 <head>
-    <title>Theories</title>
+    <title>Utility</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mynerve&family=Rubik+80s+Fade&family=Rubik+Scribble&family=Rubik+Spray+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <header>
-        <div><img src="images/logo.svg" alt="Logo"></div>
+        <div><a href="/index.html"><img src="images/logo.png" alt="Logo"></a></div>
         <nav>
             <a href="scarcity.html">SCARCITY</a>
             <a href="utility.html">UTILITY</a>
             <a href="tradeoff.html">TRADEOFF</a>
         </nav>
     </header>
-    <section class="scarcity">
+    <section class="utility">
         <div class="container">
-            <div class="content-box scarcity-title">
-                <h1 style="font-family: 'Mynerve'; margin-bottom: -30px;">The
-                    struggle against</h1>
-                <div class="scarcity-img"><img src="images/scarcity.svg" alt="Scarcity"></div>
+            <div class="content-box title">
+                <h1 style="font-family: 'Mynerve'; margin-bottom: -30px;">The law of diminishing marginal</h1>
+                <div class="title-img"><img src="images/utility.png" alt="Utility"></div>
             </div>
         </div>
         <div class="container">
             <div class="content-box description">
-                <h2 style="font-family: 'Mynerve';">The Economic Problem</h2>
-                <p>Everyday we deal with the struggle of scarcity. There
-                    is only so much we can achieve in a lifetime and so
-                    every choice we make is important, no matter how
-                    small.<br>
+                <h2 style="font-family: 'Mynerve';">Is it enough?</h2>
+                <p>What can help us make choices in our day to day lives? Well utility should probably be considered.
+                    Everything we do, buy, or recieve gives us some form of satisfaction. Whether that's positive or
+                    negative is subjective to each person. With every unit of goods recieved, satisfaction increases.
+                    But of course, there are limits to this.<br>
                     </br>
-                    Greek philosopher Hesiod is regarded as the first economist to acknowledge this as a problem. At
-                    the core, scarcity is what economics is all about. Wars are fought over scarce resources,
-                    poverty, hunger and famine still exists, I want to say that the human condition itself is a
-                    manifestation of
-                    scarcity. <br>
-                    </br>Establish priorities. Choices will be presented to you. And it is up to you, to decide
-                    what you believe is beneficial to you. It's different for every individual and there are
-                    obviously so many external factors that will affect real life decisions. Regardless, for the
-                    sake of simplicity I present to you, a short narrative of how external factors can affect this
-                    process.</p>
+                    I want to introduce the law of diminishing marginal utility. It states that as consumption
+                    increases, the satisfaction you get from each additional unit decreases.<br>
+                    </br>We live in a world of consumption. Trends come and go faster than ever, and we are force fed
+                    products that promise prestige among your peers, convenience, and more. As soon as you have the
+                    shiny new thing, the next is already making big waves. It can become overwhelming for a lot of
+                    people.</p>
             </div>
-            <div class="content-box">
+            <div class="content-box example">
+                <div class="stats">
+                    <div>Cookies Eaten: <span id="cookie-count">0</span></div>
+                    <div>Total Satisfaction: <span id="total-satisfaction">0</span></div>
+                    <div>Last Satisfaction: <span id="marginal-satisfaction">0</span></div>
+                </div>
 
+                <div class="satisfaction-meter">
+                    <div class="satisfaction-fill" id="satisfaction-fill"></div>
+                </div>
+
+                <div class="cookie" id="cookie">🍪</div>
+
+                <div class="message" id="message">How satisfied will you be with each cookie?</div>
+
+                <div class="graph" id="graph"></div>
+
+                <button id="reset">Start Over</button>
+                <script src="./js/utility.js"></script>
             </div>
         </div>
     </section>
@@ -52,4 +72,5 @@
         <p>© AssignmentTwo 2024</p>
     </footer>
 </body>
+
 </html>
