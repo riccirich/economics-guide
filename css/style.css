@@ -111,9 +111,9 @@ nav a {
 }
 
 .definition,
-.scarcity {
+.scarcity, .terms {
     background-color: var(--dark);
-    padding: clamp(1rem, 5vw, 9.02%) clamp(1rem, 5vw, 15%);
+    padding: 8%;
     color: var(--light);
     height: auto;
 }
@@ -162,6 +162,8 @@ nav a {
 
 .def {
     padding-top: 2rem;
+    padding: 10%;
+    background-color: var(--dark);
 }
 
 .scarcity-title,
