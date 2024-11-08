@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <script src="./js/scarcity.js"></script>
     <header>
         <div><img src="images/logo.svg" alt="Logo"></div>
         <nav>
@@ -48,12 +49,28 @@
                         what you believe is beneficial to you. It's different for every individual and there are
                         obviously so many external factors that will affect real life decisions. Regardless, for the
                         sake of simplicity I present to you, a short narrative of how external factors can affect this
-                        process.</p>
+                        process of managing energy, time, and money.</p>
                 </div>
-                <div class="content-box">
-
+                <div class="content-box example">
+                    <div id="resources">
+                        <p>Energy: <span id="energy">50</span></p>
+                        <p>Time: <span id="time">50</span></p>
+                        <p>Money: <span id="money">50</span></p>
+                    </div>
+                    <div id="taskArea">
+                        <p id="taskText">Press "Start Game" to begin!</p>
+                        <button onclick="startGame()">Start Game</button>
+                    </div>
+                    <div id="choices" style="display: none;">
+                        <button id="choice1" onclick="makeChoice(1)"></button>
+                        <button id="choice2" onclick="makeChoice(2)"></button>
+                    </div>
+                    <div id="endScreen" style="display: none;">
+                        <h2>Game Over!</h2>
+                        <p id="summary"></p>
+                        <button onclick="restartGame()">Play Again</button>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
