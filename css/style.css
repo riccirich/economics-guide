@@ -194,7 +194,8 @@ nav a {
     text-align: center;
 }
 
-#resources p, .stats {
+#resources p,
+.stats {
     font-size: 1.2rem;
 }
 
@@ -216,6 +217,10 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+nav a:hover {
+    color: var(--pink);
 }
 
 /*utility interactive example*/
@@ -361,6 +366,8 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+
 
 @keyframes flash {
     0% {
