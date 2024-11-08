@@ -29,6 +29,31 @@ header {
     height: 100vh;
 }
 
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.column {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 footer {
     text-align: center;
 }
