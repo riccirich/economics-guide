@@ -4,6 +4,57 @@
     --dark: #1f1f1f;
 }
 
+body {
+    font-family: 'Rubik';
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Rubik';
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 3.053rem;
+    /* 48.8px */
+}
+
+h2 {
+    font-size: 2.442rem;
+    /* 39.04px */
+}
+
+h3 {
+    font-size: 1.954rem;
+    /* 31.2px */
+}
+
+h4 {
+    font-size: 1.563rem;
+    /* 24.96px */
+}
+
+h5 {
+    font-size: 1.250rem;
+    /* 20px */
+}
+
+small {
+    font-size: 0.800rem;
+    /* 12.8px */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,21 +63,13 @@
 
 .display {
     font-family: 'Mynerve', sans-serif;
-}
-
-.title {
-    font-family: 'Rubik', sans-serif;
-    font-size: 48.8px;
+    font-size: 1.250rem;
 }
 
 body,
 html {
     min-height: 100vh;
     margin: 0;
-}
-
-body {
-    font-family: "Rubik", serif;
 }
 
 header {
@@ -60,14 +103,14 @@ nav a {
     background-image: url(../images/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-
+    height: auto;
 }
 
 .definition {
     background-color: var(--dark);
     padding: clamp(1rem, 5vw, 9.02%) clamp(1rem, 5vw, 15%);
     color: var(--light);
+    height: auto;
 }
 
 .container {
@@ -81,9 +124,16 @@ nav a {
     margin: 0 auto;
 }
 
+.content-box {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--light);
+    border-radius: 4px;
+}
+
 .hero-text {
     /*padding: 9% 15%;*/
-    padding: clamp(1rem, 5vw, 9.02%) clamp(1rem, 5vw, 15%);
+    padding-top: 15%;
     color: var(--dark);
 }
 
@@ -94,8 +144,9 @@ nav a {
 }
 
 .economists {
-    position: absolute;
-
+    width: 100%;
+    margin-top: -30%;
+    margin-bottom: -9px;
 }
 
 .quote img,
